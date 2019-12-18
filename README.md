@@ -24,30 +24,16 @@ npm run build-all // 打包所有模块
 ## 目录结构
 ```
 webpack
- |---build
- |---src
-     |---assets    #资源
-     |---css/common.css  #css
-     |---fonts/    #字体图标
- |---components 组件
-     |---tpl.vue  按钮组件
- |---config 插件
-     |---js/common.js    #全局样式依赖与公共组建
-     |---js/fleible.js    #手淘rem自适应
-     |---js/lib.js    #微信,以及封装的方法
-     |---js/mUtils.js    # 自定义方法
-     |---js/vueFilter.js    #注册vue的全局过滤器
- |---server 接口
-     |---domains.js    #域名地址及接口地址
-     |---http.js    #axios配置，及异常处理
-     |---index.js    #暴露接口名给组件调用
- |---page    #各个页面模块，模块名可以自定义哦！
-     |---abc    #一级目录
-        |---index.html
-        |---index.js
-        |---app.vue
-     |---def
-        |---index.html#二级目录
-        |---index.js
-        |---app.vue
-
+├── build                  // H5编译结果目录
+├── src                    // 源码目录
+│   ├── components             // 组件
+│   ├── config                 // 项目开发配置
+│   ├── modules                  // 页面文件目录
+│   │   └── abc
+│   │       ├── index.html           
+│   │       ├── index.js           
+│   │       └── app.vue     
+│   │   └── bef
+│   │       ├── index.html           
+│   │       ├── index.js           
+│   │       └── app.vue   
