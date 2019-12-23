@@ -1,5 +1,6 @@
 # Vue-multiModule多项目共用组件单独打包
 
+``` bash
 ## 多模块集成的vue项目，多项目共用一份配置，可以互相依赖，也可以独立打包部署。
 ## 对于一些小公司来说，一个岗位可能身兼数职，可以说是麻雀虽小五脏俱全。
 ## 小公司项目多，产品迭代快，所以搭建项目的时间就相对较少，重心在于业务。项目的一些依赖，工具，方法，库，组件能复用就复用，省时省力。
@@ -7,7 +8,6 @@
 
 ## Build Setup
 
-``` bash
 # install dependencies
 npm install
 
@@ -20,20 +20,3 @@ npm run build moduleName1,moduleName2,... // 打包指定模块
 npm run build-all // 打包所有模块
 
 # 项目已配置proxy，支持本地跨域请求
-
-## 目录结构
-```
-webpack
-├── build                  // H5编译结果目录
-├── src                    // 源码目录
-│   ├── components             // 组件
-│   ├── config                 // 项目开发配置
-│   ├── modules                  // 页面文件目录
-│   │   └── abc
-│   │       ├── index.html           
-│   │       ├── index.js           
-│   │       └── app.vue     
-│   │   └── bef
-│   │       ├── index.html           
-│   │       ├── index.js           
-│   │       └── app.vue   
